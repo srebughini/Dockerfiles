@@ -39,5 +39,3 @@ RUN apt-get update -y \
 && apt-get install --no-install-recommends ca-certificates libboost-dev cython3 gfortran python3-dev python3-setuptools python3-numpy python3-ruamel.yaml -y \
 && rm -rf /var/lib/apt/lists/* \
 && echo source /usr/local/bin/setup_cantera >> ~/.bashrc
-
-ENTRYPOINT ["python3"]
